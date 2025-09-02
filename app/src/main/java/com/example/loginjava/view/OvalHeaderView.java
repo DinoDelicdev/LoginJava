@@ -16,12 +16,11 @@ import com.example.loginjava.R;
 
 public class OvalHeaderView extends ConstraintLayout {
 
-    // ✅ FIX 1: Initialize paint right here and keep it final.
     private final Paint paint = new Paint(Paint.ANTI_ALIAS_FLAG);
     private final Path path = new Path();
     private String headerText = "Header";
 
-    // ✅ FIX 2: Remove the 'final' keyword from these views.
+
     private ImageView backButton;
     private TextView headerTextView;
 
@@ -41,15 +40,10 @@ public class OvalHeaderView extends ConstraintLayout {
     }
 
     private void init(Context context, AttributeSet attrs) {
-        // We moved the paint creation above, so we just set its style and color here.
         paint.setStyle(Paint.Style.FILL);
         paint.setColor(ContextCompat.getColor(context, R.color.bingo_main));
-
         setWillNotDraw(false);
-
         LayoutInflater.from(context).inflate(R.layout.view_oval_header_content, this, true);
-
-        // Now we can assign values to our non-final view variables.
         backButton = findViewById(R.id.headerBackButton);
         headerTextView = findViewById(R.id.headerTitleText);
 

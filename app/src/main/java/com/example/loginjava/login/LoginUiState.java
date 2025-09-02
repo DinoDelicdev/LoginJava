@@ -1,13 +1,7 @@
-// File: LoginUiState.java
-// 🔴 Make sure this package name is correct for your project.
 package com.example.loginjava.login;
 
-// This is the Java version of your Kotlin 'data class'.
-// Its only job is to hold the information about what the UI should look like.
 public class LoginUiState {
 
-    // These fields are 'final' because a state should be immutable.
-    // We create a new state object instead of changing an existing one.
     private final String email;
     private final String password;
     private final String emailError;
@@ -15,7 +9,7 @@ public class LoginUiState {
     private final boolean isLoading;
     private final boolean loginSuccess;
 
-    // The default constructor for the initial state of the screen.
+    // pocetni state
     public LoginUiState() {
         this.email = "";
         this.password = "";
@@ -25,7 +19,7 @@ public class LoginUiState {
         this.loginSuccess = false;
     }
 
-    // A constructor to create a new state with updated values.
+    // Konstruktor za novi state sa updatovanim vrijednostima
     public LoginUiState(String email, String password, String emailError, String passwordError, boolean isLoading, boolean loginSuccess) {
         this.email = email;
         this.password = password;
@@ -35,7 +29,6 @@ public class LoginUiState {
         this.loginSuccess = loginSuccess;
     }
 
-    // "Getters" are public methods that let other classes read the private fields.
     public String getEmail() { return email; }
     public String getPassword() { return password; }
     public String getEmailError() { return emailError; }

@@ -9,7 +9,6 @@ public class LoginRequest {
         this.email = email;
         this.password = password;
     }
-    // Getters can be useful for libraries like Gson
     public String getEmail() { return email; }
     public String getPassword() { return password; }
 }
