@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="bingo_main">#399A19</color>
+    <color name="bingo_gray">#777777</color>
+    <color name="text_primary">#333333</color>
+    <color name="input_background">#E0E0E0</color>
+    <color name="error_red">#FF0000</color>
+</resources>
